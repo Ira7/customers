@@ -1,0 +1,18 @@
+<app-new-customer></app-new-customer>
+
+<div>
+  <h1>Customer List</h1>
+</div>
+<div class="row heading">
+  <div class="col-xs-4">Customer Name</div>
+  <div class="col-xs-4">Location</div>
+  <div class="col-xs-4">Email Address</div>
+  </div>
+<div *ngFor="let customer of Customers" [routerLink]="['/detail', customer.id]" class="row table-row">
+  <div class="col-xs-4">{{customer.name}}</div>
+  <div class="col-xs-4">{{customer.location}}</div>
+  <div class="col-xs-4">{{customer.email}}</div>
+  </div>
+
+
+   <!--[routerLink]="['/detail', customer.id]"-->

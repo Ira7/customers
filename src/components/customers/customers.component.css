@@ -1,0 +1,13 @@
+.heading{
+    padding:15px;
+color:grey;
+background-color: #eee;
+border: 1px solid #ccc;
+}
+
+.table-row{
+    padding:10px;
+    color:grey;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
