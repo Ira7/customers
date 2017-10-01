@@ -29,9 +29,20 @@ customer:any;
   }
 
   getOneCostumer(id){
-    this.customer = this.data.filter(item => {
-               return item.id == id;
-            });
+
+   this.customer = this.data.find(item => item.id === id);
+    
+    // this.customer=this.data.forEach(item => {
+    //      item.id == id;
+    //   });
+ 
+
+  //  this.customer=this.data.filter(item => {
+  //              item.id == id;
+  //              return item;
+               
+  //           });
+        
   }
 
 //     getCustomers(): Promise<Customer[]> {

@@ -37,8 +37,8 @@ export class CustomerDetailComponent implements OnInit {
   // }
 
   ngOnInit() {
-  //  this.customer=this.customersService.getOneCostumer(0);
-  this.customer="Ira";
+   this.customer=this.customersService.getOneCostumer(0);
+  //this.customer="Ira";
   }
 
 }
