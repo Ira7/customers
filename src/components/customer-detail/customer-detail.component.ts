@@ -37,7 +37,16 @@ export class CustomerDetailComponent implements OnInit {
   // }
 
   ngOnInit() {
-   this.customer=this.customersService.getOneCostumer(0);
+    let id = null;
+    this.route.params.subscribe((res)=>{
+      id = res.id || null;
+    });
+    if(id === null){
+      this.customer = [];
+    }
+    else{
+      this.customer=this.customersService.getOneCostumer(Number(id));
+    }
   //this.customer="Ira";
   }
 

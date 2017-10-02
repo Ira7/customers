@@ -29,8 +29,11 @@ customer:any;
   }
 
   getOneCostumer(id){
-
-   this.customer = this.data.find(item => item.id === id);
+   return this.data.find((item) => {
+     if(item.id === id){
+      return item;
+     }
+    });
     
     // this.customer=this.data.forEach(item => {
     //      item.id == id;
